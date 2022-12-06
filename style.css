@@ -4,17 +4,6 @@
   text-align: center;
 }
 
-.box {
-  box-sizing: border-box;
-  background-color: white;
-  border: 10px solid white;
-  border-radius: 20%;
-  width: 400px;
-  height: 500px;
-  margin: auto;
-  margin-top: 50px;
-}
-
 header {
   padding-top: 50px;
   font-size: 50px;
@@ -36,9 +25,31 @@ header {
   color: white;
 }
 
-li {
+.box {
+  box-sizing: border-box;
+  background-color: white;
+  border: 10px solid white;
+  border-radius: 20%;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+ul {
   display: inline-block;
   border: 1px solid gray;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+}
+
+#firstItem {
+  border: 1px solid gray;
+  display: inline block;
+}
+li {
+  background-color: white;
 }
 
 #checkbox {
@@ -46,12 +57,20 @@ li {
   height: 20px;
   border-radius: 30%;
   margin-right: 70%;
+  float: left;
+  padding: 30px;
+  margin-top: 20%;
 }
 
-#image {
-  margin-right: 10%;
+#firstSpan {
+  background-color: white;
 }
 
-span {
-  display: inline-block;
+#secondSpan {
+  background-color: white;
+}
+.image {
+  float: right;
+  padding: 30px;
+  background-color: white;
 }
