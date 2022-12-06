@@ -1,0 +1,57 @@
+* {
+  background-color: #ddff;
+  list-style: none;
+  text-align: center;
+}
+
+.box {
+  box-sizing: border-box;
+  background-color: white;
+  border: 10px solid white;
+  border-radius: 20%;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+header {
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+#inputbox {
+  margin-top: 20px;
+  width: 250px;
+  height: 45px;
+  border: 1px solid gray;
+}
+
+#inputbutton {
+  margin-left: 5px;
+  height: 45px;
+  width: 40px;
+  font-size: large;
+  background-color: #6864cc;
+  color: white;
+}
+
+li {
+  display: inline-block;
+  border: 1px solid gray;
+}
+
+#checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 30%;
+  margin-right: 70%;
+}
+
+#image {
+  margin-right: 10%;
+}
+
+span {
+  display: inline-block;
+}
