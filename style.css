@@ -7,6 +7,7 @@
 header {
   padding-top: 50px;
   font-size: 50px;
+  font-family: "Jua";
 }
 
 #inputbox {
@@ -44,31 +45,25 @@ ul {
   background-color: white;
 }
 
-#firstItem {
-  border: 1px solid gray;
-  display: inline block;
-}
 li {
   background-color: white;
 }
 
-#checkbox {
+.checkbox {
   width: 20px;
   height: 20px;
   border-radius: 30%;
   margin-right: 70%;
-  float: left;
   padding: 30px;
   margin-top: 20%;
+  display: inline-block;
 }
 
-#firstSpan {
+.todoText {
   background-color: white;
+  font-family: "Jua";
 }
 
-#secondSpan {
-  background-color: white;
-}
 .image {
   float: right;
   padding: 30px;
