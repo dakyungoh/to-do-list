@@ -1,28 +1,32 @@
 * {
   background-color: #ddf;
   box-sizing: border-box;
+  font-family: "Jua";
 }
 
 header {
   padding-top: 50px;
-  font-family: "Jua";
   text-align: center;
 }
 
-#inputbox {
-  margin-top: 20px;
-  width: 250px;
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  margin: auto;
+}
+
+#input-box {
+  width: 300px;
   height: 45px;
   border: 1px solid gray;
-  font-family: "Jua";
   font-size: larger;
 }
 
-#inputbutton {
-  margin-left: 5px;
+#input-button {
   height: 45px;
   width: 40px;
-  font-size: large;
+  font-size: 1.5em;
   background-color: #6864cc;
   color: white;
 }
@@ -35,7 +39,7 @@ header {
   width: 400px;
   height: 500px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 0 40px;
 }
 
@@ -55,7 +59,6 @@ li {
 
 li > span {
   background-color: white;
-  font-family: "Jua";
   font-size: 1.5em;
 }
 
