@@ -14,42 +14,37 @@
     <header>
       <h1>To Do List</h1>
       <div class="input-wrapper">
-        <input
-          type="text"
-          id="input-box"
-          placeholder="내용을 입력하세요"
-          onclick="onclickInputbox(this)"
-        />
+        <input type="text" id="input-box" placeholder="내용을 입력하세요" />
         <input
           type="button"
           id="input-button"
           value="+"
-          onclick="onclickInputbutton()"
+          onclick="onClickInputButton(this)"
         />
       </div>
     </header>
     <main>
       <ul class="to-do-list">
         <li>
-          <input type="checkbox" class="checkbox" onclick="onclickCheckbox()" />
+          <input type="checkbox" class="checkbox" onclick="onClickCheckbox()" />
           <span>first item</span>
           <img
             src="trashcan.png"
             width="20"
             height="20"
             alt="my image"
-            onclick="onclickImage()"
+            onclick="onClickDeleteButton()"
           />
         </li>
         <li>
-          <input type="checkbox" class="checkbox" onclick="onclickCheckbox()" />
+          <input type="checkbox" class="checkbox" onclick="onClickCheckbox()" />
           <span>second item</span>
           <img
             src="trashcan.png"
             width="20"
             height="20"
             alt="my image"
-            onclick="onclickImage()"
+            onclick="onClickDeleteButton()"
           />
         </li>
       </ul>
