@@ -41,9 +41,10 @@ function onClickCheckbox(checkboxElem) {
   const liElem = checkboxElem.parentElement;
   const spanElem = liElem.querySelector("span");
   if (checkboxElem.checked) {
-    console.log(spanElem);
     spanElem.innerHTML = `<s>${spanElem.innerText}</s>`;
   } else {
     spanElem.innerHTML = `${spanElem.innerText}`;
   }
 }
+
+//TODO:한국어 입력시 값이 두번 추가되는 부분 변경해보기
