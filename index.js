@@ -1,29 +1,49 @@
-// 1. inputbutton을 누르면 값이 추가된다.
-// 1-1. inputbox값 받아오기
-// 1-2. to-do-list에 inputbox값 추가하기
-// 1-3. 엔터를 누르면 to-do-list에 inputbox값이 추가된다.
-// 2. to-do-list의 체크박스를 누르면 inputbox값에 줄이 그어진다.
-// 3. 휴지통 그림을 누르면 inputbox값이 사라진다.
+// 1. input값을 입력한다.
+// 2. input-button누르면 input값이 추가된다.
+// 2-1. enter를 누르면 값이 추가된다.
+// 3. checkbox를 누르면 input에 줄이 그어진다
+// 4. 휴지통 그림을 누르면 값이 지워진다.
+
 function onClickInputButton(elem) {
   const inputBoxElem = document.querySelector("#input-box");
   const inputBoxValue = inputBoxElem.value;
   document.querySelector(".to-do-list").innerHTML += `
-    <li>
-      <input type="checkbox" class="checkbox" onclick="onClickCheckbox()" />
-      <span>${inputBoxValue}</span>
-      <img
-        src="trashcan.png"
-        width="20"
-        height="20"
-        alt="delete button"
-        onclick="onClickDeleteButton()"
-      />
-    </li>
+  <li>
+  <input
+    type="checkbox"
+    class="checkbox"
+    onclick="onClickCheckbox(this)"
+  />
+  <span>${inputBoxValue}</span>
+  <img
+    src="trashcan.png"
+    width="20"
+    height="20"
+    alt="my image"
+    onclick="onClickDeleteButton(this)"
+  />
+</li>
   `;
+  inputBoxElem.value = "";
 }
 
-// TODO: 이거 만들자.
-function onClickCheckbox() {}
+function enterKey() {
+  if (window.event.keyCode === 13) {
+    onClickInputButton();
+  }
+}
 
-// TODO: 이거 만들자.
-function onClickDeleteButton() {}
+function onClickDeleteButton(deleteElem) {
+  deleteElem.parentElement.remove();
+}
+
+function onClickCheckbox(checkboxElem) {
+  const liElem = checkboxElem.parentElement;
+  const spanElem = liElem.querySelector("span");
+  if (checkboxElem.checked) {
+    console.log(spanElem);
+    spanElem.innerHTML = `<s>${spanElem.innerText}</s>`;
+  } else {
+    spanElem.innerHTML = `${spanElem.innerText}`;
+  }
+}
