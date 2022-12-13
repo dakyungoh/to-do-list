@@ -28,7 +28,7 @@ function onClickInputButton(elem) {
 }
 
 function enterKey() {
-  if (window.event.keyCode === 13) {
+  if (window.event.keyCode == 13) {
     onClickInputButton();
   }
 }
